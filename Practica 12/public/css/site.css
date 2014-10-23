@@ -1,0 +1,31 @@
+
+
+*{
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	width: 100%;
+	background-color: #eee;
+}
+
+menu{
+	padding-left: 10px;
+}
+
+#main-content{
+	min-height: 400px;
+	padding: 10px;
+}
+
+textarea{
+	max-width: 100%;
+	width: 100%;
+}
+
+
+.wrapper{
+	max-width: 900px;
+	margin: 0 auto;
+}

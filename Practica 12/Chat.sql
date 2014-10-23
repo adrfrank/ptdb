@@ -3,11 +3,18 @@
 drop table Mensajes cascade;
 drop table Canales cascade;
 drop table EstadosCanales cascade;
+drop table UsuariosDatos cascade;
 drop table Usuarios cascade;
 
 create table Usuarios(
 	Id serial primary key,
 	Nombre varchar(50) not null
+);
+
+create table UsuariosDatos(
+	Id serial primary key,
+	Direccion varchar(500),
+	UsuarioId int references Usuarios(Id)
 );
 
 create table EstadosCanales(

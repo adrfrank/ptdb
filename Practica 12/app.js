@@ -6,6 +6,8 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
+var tables = require('./routes/tables');
+var querys = require('./routes/querys');
 
 var app  = express();
 
@@ -18,7 +20,13 @@ app.use(bodyParser.urlencoded());
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+
+app.use('/tables/',tables);
+app.use('/querys/',querys);
+
 app.use('/', routes);
+
+
 
 
 

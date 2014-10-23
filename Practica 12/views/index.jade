@@ -1,8 +1,17 @@
-extends layout
+extends layout  
 
-  
-block head
-  script(src="myfile.js")
 
 block content
-  h1 #{title}
+	header.wrapper
+		h1 #{title}
+	nav.wrapper
+		ul.nav.nav-tabs(role="tablist")
+			li.active 
+				a(href="#tables") Tablas	
+			li 
+				a(href="#querys") Consultas
+	section#main-content.wrapper.panel	&nbsp;
+	footer.wrapper
+		Adrian Francisco Gonzalez Gutierrez | 212354584
+
+
