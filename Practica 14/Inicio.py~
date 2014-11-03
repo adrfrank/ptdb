@@ -1,0 +1,8 @@
+import wx
+import GUIPractica14
+
+print 'Importada'
+app = wx.App(False)
+
+
+
