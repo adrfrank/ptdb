@@ -1,9 +1,10 @@
 import MySQLdb 
 
 def runSQL(query):
-	db = MySQLdb.connect("127.0.0.1","root","","practica13")
+	db = MySQLdb.connect("127.0.0.1","root","","practica14")
 	cursor = db.cursor();  
 	data = None  
+	print "Ejecutando: ",query
 	try:
 		cursor.execute(query)
 		if query.upper().startswith('SELECT'): 
